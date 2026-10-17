@@ -13,12 +13,7 @@ license-files = ["LICENSE"]
 dependencies = ["torch>=2.2"]
 
 [project.optional-dependencies]
-test = ["pytest>=7", "numpy>=1.24"]
 plot = ["matplotlib>=3.7"]
 
 [tool.setuptools]
 packages = ["mnopt"]
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-markers = ["compile: exercise torch.compile with the installed compiler"]

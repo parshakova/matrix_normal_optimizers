@@ -36,12 +36,11 @@ for every parameter.
 Parameter settings are in [`configs/`](configs). Set `compile=True` to
 compile the update kernel.
 
-## Example and tests
+## Example
 
 ```bash
-pip install -e '.[test,plot]'
-python examples/regression.py --optimizer all --steps 100
-python -m pytest tests -q
+pip install -e '.[plot]'
+python examples/regression.py --optimizer all --steps 100 --plot
 ```
 
 The regression example compares all four methods and three `MND-Muon` learning
