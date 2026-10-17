@@ -1,0 +1,4 @@
+{
+  "optimizer": "mn",
+  "kwargs": {"lr": 0.0006, "beta": 0.9, "eps": 1e-8, "weight_decay": 0.0, "centered": false, "beta2": null, "shrinkage": 0.01, "inverse_method": "newton_schulz", "ns_iters": 6}
+}

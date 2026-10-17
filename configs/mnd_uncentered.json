@@ -1,0 +1,4 @@
+{
+  "optimizer": "mnd",
+  "kwargs": {"lr": 0.003, "beta": 0.925, "eps": 1e-9, "weight_decay": 0.0, "centered": false, "beta2": null}
+}

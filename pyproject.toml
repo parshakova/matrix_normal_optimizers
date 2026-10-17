@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mnopt"
+version = "0.1.0"
+description = "Centered Adam and Matrix Normal optimizers for deep learning."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+dependencies = ["torch>=2.2"]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "numpy>=1.24"]
+plot = ["matplotlib>=3.7"]
+
+[tool.setuptools]
+packages = ["mnopt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["compile: exercise torch.compile with the installed compiler"]
