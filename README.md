@@ -1,7 +1,8 @@
 # Matrix Normal Optimizers
 
 PyTorch implementations of `Centered Adam`, `MN`, `MND`, and `MND-Muon` from
-*A Statistical Viewpoint on Adam, Shampoo and Muon*. 
+[*A Statistical Viewpoint on Adam, Shampoo and Muon*](https://arxiv.org/abs/2610.24839)
+by Tetiana Parshakova, Robert M. Gower, and Paulo Orenstein (2026).
 
 ## Installation
 
@@ -40,7 +41,7 @@ compile the update kernel.
 
 ```bash
 pip install -e '.[plot]'
-python examples/regression.py --optimizer all --steps 100 --plot
+python examples/regression.py --optimizer all --steps 100 
 ```
 
 The regression example compares all four methods and three `MND-Muon` learning
@@ -49,11 +50,14 @@ rates. It displays loss curves without saving files.
 ## Citation
 
 ```bibtex
-@unpublished{parshakova2026statistical,
+@misc{parshakova2026statistical,
   title  = {A Statistical Viewpoint on Adam, Shampoo and Muon},
   author = {Parshakova, Tetiana and Gower, Robert M. and Orenstein, Paulo},
   year   = {2026},
-  note   = {Preprint}
+  eprint = {2610.24839},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.LG},
+  url    = {https://arxiv.org/abs/2610.24839}
 }
 ```
 
